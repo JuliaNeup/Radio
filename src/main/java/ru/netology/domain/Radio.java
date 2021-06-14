@@ -42,13 +42,18 @@ public class Radio {
 
     void decreaseChanel() {
         if (currentChanel > minChannel) {
-            currentChanel = currentChanel - 1;
+            currentChanel--;
         }
-    }
+            else {
+                currentChanel=maxChannel;
+            }
+        }
 
     void increaseChanel() {
         if (currentChanel < maxChannel) {
-            currentChanel = currentChanel + 1;
+            currentChanel ++;
+        } else  {
+            currentChanel= minChannel;
         }
     }
 
@@ -60,7 +65,7 @@ public class Radio {
 
     void decreaseVolume() {
         if (currentVolume > minVolume) {
-            currentVolume = currentVolume - 1;
+            currentVolume = currentVolume- 1;
         }
     }
 }
