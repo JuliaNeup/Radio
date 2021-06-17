@@ -44,10 +44,10 @@ public class Radio {
         if (currentChanel > minChannel) {
             currentChanel--;
         }
-            else {
-                currentChanel=maxChannel;
-            }
+        else {
+            currentChanel=maxChannel;
         }
+    }
 
     void increaseChanel() {
         if (currentChanel < maxChannel) {
